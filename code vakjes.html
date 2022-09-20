@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Het spel</title>
+    <script>
+
+            
+    function veranderKleur(vakjenummer) {
+		var huidigeVak = "vakje"+vakjenummer;
+		console.log(huidigeVak);
+
+		if (document.getElementById(huidigeVak).className == "rood") {
+		alert("Hier mag je niet overheen!")
+
+		} else if (document.getElementById(huidigeVak).className == "groen") {
+		document.getElementById(huidigeVak).className = "rood";
+
+		} else if (document.getElementById(huidigeVak).className == "bonus") {
+		document.getElementById(huidigeVak).className = "rood";
+
+		} else if (document.getElementById(huidigeVak).className == "begin") {
+
+		document.getElementById(huidigeVak).className = "rood";
+
+		} else if (document.getElementById(huidigeVak).className == "eind") {
+
+		alert("gefeliciteerd")
+		}
+    }        
+    </script>
+    <style>
+        #spel {
+            width: 600px;
+            height: 600px;
+            background-color: rgb(0, 200, 255);
+        }
+
+        .rood {
+            width: 98px;
+            height: 98px;
+            float: left;
+            background-color: rgb(249, 8, 8);
+            border: 1px solid black;
+        }
+        .begin {
+            width: 98px;
+            height: 98px;
+            float: left;
+            background-color: rgb(8, 20, 249);
+            border: 1px solid black;
+        }
+        .groen {
+            width: 98px;
+            height: 98px;
+            float: left;
+            background-color: rgb(44, 234, 15);
+            border: 1px solid black;
+        }
+        .bonus {
+            width: 98px;
+            height: 98px;
+            float: left;
+            background-color: rgb(234, 15, 230);
+            border: 1px solid black;
+
+        }
+        .eind {
+            width: 98px;
+            height: 98px;
+            float: left;
+            background-color: rgb(6, 6, 6);
+            border: 1px solid black;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="spel">
+        <div class="begin" id="vakje0" onmouseover="veranderKleur(0)"></div>
+        <div class="groen" id="vakje1" onmouseover="veranderKleur(1)"></div>
+        <div class="groen" id="vakje2" onmouseover="veranderKleur(2)"></div> 
+        <div class="groen" id="vakje3"onmouseover="veranderKleur(3)"></div>
+        <div class="groen" id="vakje4" onmouseover="veranderKleur(4)"></div>
+        <div class="rood" id="vakje5" onmouseover="veranderKleur(5)"></div>
+        <div class="rood" id="vakje6" onmouseover="veranderKleur(6)"></div>
+        <div class="rood" id="vakje7" onmouseover="veranderKleur(7)"></div>
+        <div class="rood" id="vakje8" onmouseover="veranderKleur(8)"></div> 
+        <div class="rood" id="vakje9" onmouseover="veranderKleur(9)"></div>
+        <div class="bonus" id="vakje10" onmouseover="veranderKleur(10)"></div>
+        <div class="rood" id="vakje11" onmouseover="veranderKleur(11)"></div>
+        <div class="rood" id="vakje12" onmouseover="veranderKleur(12)"></div>
+        <div class="rood" id="vakje13" onmouseover="veranderKleur(13)"></div>
+        <div class="bonus" id="vakje14" onmouseover="veranderKleur(14)"></div> 
+        <div class="bonus" id="vakje15"onmouseover="veranderKleur(15)"></div>
+        <div class="bonus" id="vakje16" onmouseover="veranderKleur(16)"></div>
+        <div class="rood" id="vakje17" onmouseover="veranderKleur(17)"></div>
+        <div class="rood" id="vakje18" onmouseover="veranderKleur(18)"></div>
+        <div class="rood" id="vakje19" onmouseover="veranderKleur(19)"></div>
+        <div class="groen" id="vakje20" onmouseover="veranderKleur(20)"></div> 
+        <div class="rood" id="vakje21" onmouseover="veranderKleur(21)"></div>
+        <div class="rood" id="vakje22" onmouseover="veranderKleur(22)"></div>
+        <div class="rood" id="vakje23" onmouseover="veranderKleur(23)"></div>
+        <div class="rood" id="vakje24" onmouseover="veranderKleur(24)"></div>
+        <div class="rood" id="vakje25" onmouseover="veranderKleur(25)"></div>
+        <div class="groen" id="vakje26" onmouseover="veranderKleur(26)"></div> 
+        <div class="groen" id="vakje27"onmouseover="veranderKleur(27)"></div>
+        <div class="groen" id="vakje28" onmouseover="veranderKleur(28)"></div>
+        <div class="groen" id="vakje29" onmouseover="veranderKleur(29)"></div>
+        <div class="rood" id="vakje30" onmouseover="veranderKleur(30)"></div>
+        <div class="rood" id="vakje31" onmouseover="veranderKleur(31)"></div>
+        <div class="rood" id="vakje32" onmouseover="veranderKleur(32)"></div> 
+        <div class="rood" id="vakje33"onmouseover="veranderKleur(33)"></div>
+        <div class="rood" id="vakje34" onmouseover="veranderKleur(34)"></div>
+        <div class="eind" id="vakje35" onmouseover="veranderKleur(35)"></div>
+        
+    </div>
+        
+    </div>
+    </div>
+</body>
+</html>
